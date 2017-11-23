@@ -10,8 +10,6 @@ catalog:      true
 multilingual: true
 tags:
     - Activiti
-    - 工作流
-    - 邮件配置
 ---
 
 <!-- Chinese Version -->
