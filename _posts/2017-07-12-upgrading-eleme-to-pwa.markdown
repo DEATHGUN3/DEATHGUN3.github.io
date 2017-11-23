@@ -2,16 +2,16 @@
 layout:       post
 title:        "Activiti邮件配置方式"
 subtitle:     "Upgrading Ele.me to Progressive Web App"
-date:         2017-07-12 12:00:00
+date:         2017-10-26 17:52:00
 author:       "Hux"
 header-img:   "img/in-post/post-eleme-pwa/eleme-at-io.jpg"
 header-mask:  0.3
 catalog:      true
 multilingual: true
 tags:
-    - 前端开发
-    - JavaScript
-    - PWA
+    - Activiti
+    - 工作流
+    - 邮件配置
 ---
 
 <!-- Chinese Version -->
