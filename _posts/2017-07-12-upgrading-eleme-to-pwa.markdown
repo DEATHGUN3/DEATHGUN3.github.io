@@ -1,7 +1,7 @@
 ---
 layout:       post
 title:        "Activiti邮件配置方式"
-subtitle:     "Upgrading Ele.me to Progressive Web App"
+subtitle:     "The mail configuration of Activiti"
 date:         2017-10-26 17:52:00
 author:       "Jin"
 header-img:   "img/in-post/post-eleme-pwa/eleme-at-io.jpg"
@@ -20,8 +20,4 @@ tags:
     {{ about_zh | markdownify }}
 </div>
 
-<!-- English Version -->
-<div class="en post-container">
-    {% capture about_en %}{% include posts/2017-07-12-upgrading-eleme-to-pwa/en.md %}{% endcapture %}
-    {{ about_en | markdownify }}
-</div>
+
