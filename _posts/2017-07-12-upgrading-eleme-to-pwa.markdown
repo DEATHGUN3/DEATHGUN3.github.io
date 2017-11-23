@@ -3,7 +3,7 @@ layout:       post
 title:        "Activiti邮件配置方式"
 subtitle:     "Upgrading Ele.me to Progressive Web App"
 date:         2017-10-26 17:52:00
-author:       "Hux"
+author:       "Jin"
 header-img:   "img/in-post/post-eleme-pwa/eleme-at-io.jpg"
 header-mask:  0.3
 catalog:      true
