@@ -1,6 +1,7 @@
 ---
 layout:       post
-title:        "RESTful API"
+title:        "RESTful API的HTTP动词"
+subtitle:     "The HTTP verb of RESTful API"
 date:         2017-10-12 17:52:00
 author:       "Jin"
 header-img:   "img/activiti/bg3.jpg"
