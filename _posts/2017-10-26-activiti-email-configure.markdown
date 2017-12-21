@@ -14,7 +14,7 @@ tags:
 
 <!-- Chinese Version -->
 <div class="zh post-container">
-    {% capture about_zh %}{% include posts/2017-07-12-upgrading-eleme-to-pwa/zh.md %}{% endcapture %}
+    {% capture about_zh %}{% include posts/2017-10-26-activiti-email-configure/zh.md %}{% endcapture %}
     {{ about_zh | markdownify }}
 </div>
 
