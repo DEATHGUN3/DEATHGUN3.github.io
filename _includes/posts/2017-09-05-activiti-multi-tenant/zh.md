@@ -1,19 +1,19 @@
 ﻿# Activiti 多租户
 ## 一、多租户共享数据库
 主要用于数据共享在一个数据库的使用场景，一个或者多个引擎共用一个数据库，因此，操作的时候需要区分部署的流程资源的来源。
-![](https://github.com/DEATHGUN3/DEATHGUN3.github.io/img/activiti-multi-tenant/1.png)
+![](/img/activiti-multi-tenant/1.png)
 上图中的例子存在两个相同的流程定义Key，但是来源不同，引擎会使用TENANT_ID_来确保数据不会混乱。
 优点：部署比较方便，只需要在启动流程实例的同时设置TENANT_ID_即可。
 缺点：1. 操作数据的时候需要时刻使用TENANT_ID_，如果不传递该值或者传递错误，就会出问题。
      2. 引擎共享一个数据库会造成库中的数据激增，当数据达到一定规模的时候，会比较吃力。
 ## 二、多租户独立数据库（多引擎）
 每一个引擎使用自身的数据库，引擎之间的数据完全隔离。
-![](https://github.com/DEATHGUN3/DEATHGUN3.github.io/img/activiti-multi-tenant/2.png)
+![](/img/activiti-multi-tenant/2.png)
 优点：每一个引擎可以有不同的资源配置，引擎之间相互隔离，每个引擎的性能会大大提升。
 缺点：配置更复杂，每一个引擎实例都会占用一定的资源。
 ## 三、多租户独立数据库（单引擎）
 一个引擎支撑多个数据库的操作，需要有路由规则，例如 A 租户的数据存在 A 库，B 租户的数据存在 B 库。
-![](https://github.com/DEATHGUN3/DEATHGUN3.github.io/img/activiti-multi-tenant/3.png)
+![](/img/activiti-multi-tenant/3.png)
 通过一个引擎来管理和配置，但数据之间是相互隔离的。只需要配置和管理不同的数据库即可，引擎会自动根据TENANT_ID_找到对应的资源。
 ```
 //建立流程引擎
