@@ -1,0 +1,1 @@
+﻿![](/img/activiti-summary-overview/1.png)
