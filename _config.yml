@@ -89,5 +89,9 @@ friends: [
     {
         title: "咖啡兔",
         href: "http://www.kafeitu.me/"
+    },
+    {
+        title: "Spring Cloud|周立",
+        href: "http://www.itmuch.com/"
     }
 ]
