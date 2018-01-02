@@ -2,7 +2,7 @@
 layout:       post
 title:        "Activiti概要总览"
 subtitle:     "The summary overview of Activiti"
-date:         2017-09-01 10:18:00
+date:         2017-09-01 23:18:00
 author:       "Jin"
 header-img:   "img/activiti/bg3.jpg"
 header-mask:  0.3

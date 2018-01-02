@@ -2,7 +2,7 @@
 layout:       post
 title:        "Activiti邮件配置方式"
 subtitle:     "The mail configuration of Activiti"
-date:         2017-10-26 17:52:00
+date:         2017-10-26 22:37:00
 author:       "Jin"
 header-img:   "img/activiti/bg3.jpg"
 header-mask:  0.3
