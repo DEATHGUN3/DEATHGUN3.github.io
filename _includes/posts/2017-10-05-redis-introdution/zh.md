@@ -1,6 +1,6 @@
 # Redis入门介绍
 ## Redis是什么
-Redis:REmote DIctionary Server(远程字典服务器)。</br>
+Redis:REmote DIctionary Server(远程字典服务器)。<br>
 Redis是完全开源免费的，用C语言编写的，遵守BSD协议，是一个高性能的(key/value)分布式内存数据库，基于内存运行并支持持久化的NoSQL数据库，是当前最热门的NoSQL数据库之一，也被人们称为数据结构服务器。</br>
 Redis与其他key-value缓存产品有以下是三个特点：
 - Redis支持数据的持久化，可以将内存中的数据保持在磁盘中，重启的时候可以再次加载进行使用
