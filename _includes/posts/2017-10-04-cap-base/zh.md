@@ -1,4 +1,4 @@
-# 在分布式数据库中CAP原理CAP+BASE
+
 ## 传统的ACID
 - A(Atomicity)原子性
 - C(Consistency)一致性

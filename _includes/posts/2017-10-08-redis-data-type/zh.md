@@ -1,4 +1,4 @@
-# Redis数据类型
+
 
 ## Redis五大数据类型
 ![](/img/reids/redis-data-type.png)

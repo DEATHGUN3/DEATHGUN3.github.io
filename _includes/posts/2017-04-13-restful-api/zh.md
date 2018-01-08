@@ -1,4 +1,4 @@
-# RESTful API的HTTP动词
+
 
 常用的HTTP动词有下面五个（括号里是对应的SQL命令）。
 > - GET（SELECT）：从服务器取出资源（一项或多项）。
