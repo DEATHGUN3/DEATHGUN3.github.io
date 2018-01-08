@@ -17,9 +17,9 @@ Redis与其他key-value缓存产品有以下是三个特点：
 
 ## Redis中英文参考文档
 https://redis.io/<br>
-![](/img/redis/redis-en-h.png)<br>
+![](/img/redis/redis-en-h.png)
 http://www.redis.cn/<br>
-![](/img/redis/redis-ch-h.png)<br>
+![](/img/redis/redis-ch-h.png)
 
 ## Redis怎么玩
 1. 数据类型、基本操作和配置
