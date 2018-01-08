@@ -18,4 +18,10 @@ tags:
     {{ about_zh | markdownify }}
 </div>
 
+<!-- English Version -->
+<div class="en post-container">
+    {% capture about_en %}{% include posts/2017-10-26-activiti-email-configure/en.md %}{% endcapture %}
+    {{ about_en | markdownify }}
+</div>
+
 
