@@ -17,3 +17,9 @@ tags:
     {% capture about_zh %}{% include posts/2017-09-01-activiti-summary-overview/zh.md %}{% endcapture %}
     {{ about_zh | markdownify }}
 </div>
+
+<!-- English Version -->
+<div class="en post-container">
+    {% capture about_en %}{% include posts/2017-09-01-activiti-summary-overview/en.md %}{% endcapture %}
+    {{ about_en | markdownify }}
+</div>

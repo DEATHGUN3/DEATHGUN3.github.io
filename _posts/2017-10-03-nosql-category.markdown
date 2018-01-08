@@ -17,3 +17,9 @@ tags:
     {% capture about_zh %}{% include posts/2017-10-03-nosql-category/zh.md %}{% endcapture %}
     {{ about_zh | markdownify }}
 </div>
+
+<!-- English Version -->
+<div class="en post-container">
+    {% capture about_en %}{% include posts/2017-10-03-nosql-category/en.md %}{% endcapture %}
+    {{ about_en | markdownify }}
+</div>
