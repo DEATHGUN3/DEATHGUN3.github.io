@@ -10,3 +10,6 @@ String类型是二进制安全的。意思是redis的String可以包含任何数
 Redis hash是一个键值对集合，类似Java里面的Map<String,Object>。
 Redis hash是一个String类型的field和value的映射表，hash特别适合用于存储对象。
 
+> - List(列表)：
+
+
