@@ -4,45 +4,45 @@
 2. 对大小写不敏感
 
 ```
-# Redis configuration file example.
-#
-# Note that in order to read the configuration file, Redis must be
-# started with the file path as first argument:
-#
-# ./redis-server /path/to/redis.conf
+ Redis configuration file example.
 
-# Note on units: when memory size is needed, it is possible to specify
-# it in the usual form of 1k 5GB 4M and so forth:
-#
-# 1k => 1000 bytes
-# 1kb => 1024 bytes
-# 1m => 1000000 bytes
-# 1mb => 1024*1024 bytes
-# 1g => 1000000000 bytes
-# 1gb => 1024*1024*1024 bytes
-#
-# units are case insensitive so 1GB 1Gb 1gB are all the same.
+ Note that in order to read the configuration file, Redis must be
+ started with the file path as first argument:
+
+ ./redis-server /path/to/redis.conf
+
+ Note on units: when memory size is needed, it is possible to specify
+ it in the usual form of 1k 5GB 4M and so forth:
+
+ 1k => 1000 bytes
+ 1kb => 1024 bytes
+ 1m => 1000000 bytes
+ 1mb => 1024*1024 bytes
+ 1g => 1000000000 bytes
+ 1gb => 1024*1024*1024 bytes
+
+ units are case insensitive so 1GB 1Gb 1gB are all the same.
 ```
 
 ## INCLUDES包含
 和Struts2配置文件类似，可以通过includes包含，redis.conf可以作为总闸，包含其他
 
 ```
-# Include one or more other config files here.  This is useful if you
-# have a standard template that goes to all Redis servers but also need
-# to customize a few per-server settings.  Include files can include
-# other files, so use this wisely.
-#
-# Notice option "include" won't be rewritten by command "CONFIG REWRITE"
-# from admin or Redis Sentinel. Since Redis always uses the last processed
-# line as value of a configuration directive, you'd better put includes
-# at the beginning of this file to avoid overwriting config change at runtime.
-#
-# If instead you are interested in using includes to override configuration
-# options, it is better to use include as the last line.
-#
-# include /path/to/local.conf
-# include /path/to/other.conf
+ Include one or more other config files here.  This is useful if you
+ have a standard template that goes to all Redis servers but also need
+ to customize a few per-server settings.  Include files can include
+ other files, so use this wisely.
+
+ Notice option "include" won't be rewritten by command "CONFIG REWRITE"
+ from admin or Redis Sentinel. Since Redis always uses the last processed
+ line as value of a configuration directive, you'd better put includes
+ at the beginning of this file to avoid overwriting config change at runtime.
+
+ If instead you are interested in using includes to override configuration
+ options, it is better to use include as the last line.
+
+ include /path/to/local.conf
+ include /path/to/other.conf
 ```
 
 ## GENERAL通用
@@ -69,6 +69,35 @@
 ## SNAPSHOTTING快照
 1. Save
 - save 秒钟 写操作次数
+
+```
+ Save the DB on disk:
+
+   save <seconds> <changes>
+
+   Will save the DB if both the given number of seconds and the given
+   number of write operations against the DB occurred.
+
+   In the example below the behaviour will be to save:
+   after 900 sec (15 min) if at least 1 key changed
+   after 300 sec (5 min) if at least 10 keys changed
+   after 60 sec if at least 10000 keys changed
+
+   Note: you can disable saving completely by commenting out all "save" lines.
+
+   It is also possible to remove all the previously configured save
+   points by adding a save directive with a single empty string argument
+   like in the following example:
+
+   save ""
+
+save 900 1
+save 300 10
+save 60 10000
+```
+RDB是整个内存的压缩过的Snapshot，RDB的数据结构，可以配置复合的快照触发条件，默认**是1分钟内改了1万次，或5分钟内改了10次， 或15分钟内改了1次**
+- 禁用
+如果想禁用RDB持久化的策略，只要不设置任何save指令，或者给save传入一个空字符串参数也可以
 2. Stop-writes-on-bgsave-error
 3. rdbcompression
 4. rdbchecksum
