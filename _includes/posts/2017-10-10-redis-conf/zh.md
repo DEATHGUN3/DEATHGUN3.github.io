@@ -2,7 +2,6 @@
 ## Units单位
 1. 配置大小单位,开头定义了一些基本的度量单位，只支持bytes，不支持bit
 2. 对大小写不敏感
-
 ```
  Redis configuration file example.
 
@@ -26,7 +25,6 @@
 
 ## INCLUDES包含
 和Struts2配置文件类似，可以通过includes包含，redis.conf可以作为总闸，包含其他
-
 ```
  Include one or more other config files here.  This is useful if you
  have a standard template that goes to all Redis servers but also need
@@ -69,7 +67,7 @@
 ## SNAPSHOTTING快照
 1. Save
 - save 秒钟 写操作次数
-
+- 禁用
 ```
  Save the DB on disk:
 
@@ -95,9 +93,9 @@ save 900 1
 save 300 10
 save 60 10000
 ```
-RDB是整个内存的压缩过的Snapshot，RDB的数据结构，可以配置复合的快照触发条件，默认**是1分钟内改了1万次，或5分钟内改了10次， 或15分钟内改了1次**
-- 禁用
+RDB是整个内存的压缩过的Snapshot，RDB的数据结构，可以配置复合的快照触发条件，默认**是1分钟内改了1万次，或5分钟内改了10次， 或15分钟内改了1次**<br>
 如果想禁用RDB持久化的策略，只要不设置任何save指令，或者给save传入一个空字符串参数也可以
+
 2. Stop-writes-on-bgsave-error
 3. rdbcompression
 4. rdbchecksum
