@@ -1,7 +1,7 @@
 
 
 ## Redis是什么
-![](/img/redis/redis-intro.png)
+![Redis介绍](/img/redis/redis-intro.png)
 Redis:REmote DIctionary Server(远程字典服务器)。<br>
 Redis是完全开源免费的，用C语言编写的，遵守BSD协议，是一个高性能的(key/value)分布式内存数据库，基于内存运行并支持持久化的NoSQL数据库，是当前最热门的NoSQL数据库之一，也被人们称为数据结构服务器。<br>
 Redis与其他key-value缓存产品有以下是三个特点：
@@ -18,9 +18,9 @@ Redis与其他key-value缓存产品有以下是三个特点：
 
 ## Redis中英文参考文档
 https://redis.io/<br>
-![](/img/redis/redis-en-h.png)
+![Redis英文网站](/img/redis/redis-en-h.png)
 http://www.redis.cn/<br>
-![](/img/redis/redis-ch-h.png)
+![Redis中文网站](/img/redis/redis-ch-h.png)
 
 ## Redis怎么玩
 1. 数据类型、基本操作和配置
