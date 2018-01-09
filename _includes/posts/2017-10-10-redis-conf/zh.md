@@ -78,10 +78,10 @@ noeviction：不进行移除。针对写操作，只是返回错误信息
 1. appendonly
 2. appendfilename
 3. Appendfsync
-![](/img/redis-conf/redis-appendfsync.png)
 - Always：同步持久化 每次发生数据变更会被立即记录到磁盘  性能较差但数据完整性比较好
 - Everysec：出厂默认推荐，异步操作，每秒记录   如果一秒内宕机，有数据丢失
 - No
+![](/img/redis-conf/redis-appendfsync.png)
 4. No-appendfsync-on-rewrite：重写时是否可以运用Appendfsync，用默认no即可，保证数据安全性。
 5. Auto-aof-rewrite-min-size：设置重写的基准值。
 6. Auto-aof-rewrite-percentage：设置重写的基准值
@@ -96,7 +96,7 @@ redis.conf 配置项说明如下：
 - port 6379
 4. 绑定的主机地址
 - bind 127.0.0.1
-5.当 客户端闲置多长时间后关闭连接，如果指定为0，表示关闭该功能
+5. 当 客户端闲置多长时间后关闭连接，如果指定为0，表示关闭该功能
 - timeout 300
 6. 指定日志记录级别，Redis总共支持四个级别：debug、verbose、notice、warning，默认为verbose
 - loglevel verbose
