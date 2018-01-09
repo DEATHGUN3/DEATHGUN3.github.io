@@ -2,6 +2,7 @@
 ## Units单位
 1. 配置大小单位,开头定义了一些基本的度量单位，只支持bytes，不支持bit
 2. 对大小写不敏感
+
 ```
 # Redis configuration file example.
 #
@@ -21,10 +22,11 @@
 # 1gb => 1024*1024*1024 bytes
 #
 # units are case insensitive so 1GB 1Gb 1gB are all the same.
-```<br>
+```
 
 ## INCLUDES包含
 和Struts2配置文件类似，可以通过includes包含，redis.conf可以作为总闸，包含其他
+
 ```
 # Include one or more other config files here.  This is useful if you
 # have a standard template that goes to all Redis servers but also need
