@@ -17,9 +17,9 @@ Redis与其他key-value缓存产品有以下是三个特点：
 5. 定时器、计数器
 
 ## Redis中英文网站
-https://redis.io/<br>
+[Redis中文网站](https://redis.io/)<br>
 ![Redis英文网站](/img/redis/redis-en-h.png)
-http://www.redis.cn/<br>
+[Redis英文网站](http://www.redis.cn/)<br>
 ![Redis中文网站](/img/redis/redis-ch-h.png)
 
 ## Redis怎么玩
