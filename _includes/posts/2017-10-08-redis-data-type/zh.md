@@ -1,7 +1,7 @@
 
 
 ## Redis五大数据类型
-![](/img/reids/redis-data-type.png)
+![](/img/redis/redis-data-type.png)
 - String（字符串）<br>
 String是redis最基本的类型，可以理解成与Memcached一模一样的类型，一个key对应一个value，一个redis中字符串value最多可以是512M。<br>
 String类型是二进制安全的。意思是redis的String可以包含任何数据。比如jpg图片或者序列化的对象。
@@ -16,11 +16,11 @@ Redis的Set是String类型的无序集合。它是通过HashTable实现的。
 Redis zset和set一样也是String类型元素的集合，且不允许重复的成员。**不同的是每个元素都会关联一个double类型的分数。**Redis正是通过分数来为集合中的成员进行从小到大的排序。**zet的成员是唯一的，但分数(score)却可以重复。**
 
 ## Redis常见数据操作命令
-![](/img/reids/redis-command-reference.png)
+![](/img/redis/redis-command-reference.png)
 
 ## Redis键(key)
 常用命令参考
-![](/img/reids/redis-key.png)
+![](/img/redis/redis-key.png)
 案例
 > - keys *
 > - exists key的名字，判断某个key是否存在
@@ -31,8 +31,8 @@ Redis zset和set一样也是String类型元素的集合，且不允许重复的�
 
 ## Redis字符串(String)单值单value
 常用命令参考
-![](/img/reids/redis-string1.png)
-![](/img/reids/redis-string2.png)
+![](/img/redis/redis-string1.png)
+![](/img/redis/redis-string2.png)
 案例
 > - set/get/del/append/strlen
 > - Incr/decr/incrby/decrby,一定要是数字才能进行加减
@@ -43,8 +43,8 @@ Redis zset和set一样也是String类型元素的集合，且不允许重复的�
 
 ## Redis列表(List)单值多value
 常用命令参考
-![](/img/reids/redis-list1.png)
-![](/img/reids/redis-list2.png)
+![](/img/redis/redis-list1.png)
+![](/img/redis/redis-list2.png)
 案例
 > - lpush/rpush/lrange
 > - lpop/rpop
@@ -59,7 +59,7 @@ Redis zset和set一样也是String类型元素的集合，且不允许重复的�
 
 ## Redis集合(Set)单值多value
 常用命令参考
-![](/img/reids/redis-set.png)
+![](/img/redis/redis-set.png)
 案例
 > - sadd/smembers/sismember
 > - scard，获取集合里面的元素个数
@@ -71,7 +71,7 @@ Redis zset和set一样也是String类型元素的集合，且不允许重复的�
 
 ## Redis哈希(Hash)KV模式不变，但V是一个键值对
 常用命令参考
-![](/img/reids/redis-hash.png)
+![](/img/redis/redis-hash.png)
 案例
 > - **hset/hget/hmset/hmget/hgetall/hdel**
 > - hlen
@@ -81,10 +81,10 @@ Redis zset和set一样也是String类型元素的集合，且不允许重复的�
 > - hsetnx 不存在赋值，存在了无效。
 
 ## Redis有序集合Zset(sorted)
-在set基础上，加一个score值。之前set是k1 v1 v2 v3，现在zset是k1 score1 v1 score2 v2。
+在set基础上，加一个score值。之前set是k1 v1 v2 v3，现在zset是k1 score1 v1 score2 v2。<br>
 常用命令参考
-![](/img/reids/redis-zset1.png)
-![](/img/reids/redis-zset2.png)
+![](/img/redis/redis-zset1.png)
+![](/img/redis/redis-zset2.png)
 案例
 > - zadd/zrange
 > - zrangebyscore key 开始score 结束score 1. withscores 2. (不包含  3. Limit作用是返回限制, limit 开始下标步 多少步
