@@ -21,7 +21,7 @@
 # 1gb => 1024*1024*1024 bytes
 #
 # units are case insensitive so 1GB 1Gb 1gB are all the same.
-```
+```<br>
 
 ## INCLUDES包含
 和Struts2配置文件类似，可以通过includes包含，redis.conf可以作为总闸，包含其他
@@ -41,7 +41,7 @@
 #
 # include /path/to/local.conf
 # include /path/to/other.conf
-```
+```<br>
 
 ## GENERAL通用
 1. Daemonize
@@ -63,3 +63,12 @@
 12. Syslog-facility
 - 指定syslog设备，值可以是USER或LOCAL0-LOCAL7
 13. Databases
+
+## SNAPSHOTTING快照
+1. Save
+- save 秒钟 写操作次数
+2. Stop-writes-on-bgsave-error
+3. rdbcompression
+4. rdbchecksum
+5. dbfilename
+6. dir
