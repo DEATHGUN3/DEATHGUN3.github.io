@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        "Redis额复制(Master/Slave)"
+title:        "Redis的复制(Master/Slave)"
 subtitle:     "Redis Replication(Master/Slave)"
 date:         2017-10-17 21:44:00
 author:       "Jin"
