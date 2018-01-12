@@ -19,8 +19,7 @@
 > - 指定端口  如：port 6379 
 > - Log文件名字  如：logfile "log6379.log"
 > - Dump.rdb名字 如：dbfilename dump6379.rdb
-- 常用3招<br>
-一主多仆
+- 一主多仆
 > - Init<br>
 > - 一个Master多个Slave<br>
 > - 日志查看<br>
@@ -30,15 +29,13 @@
 3 主机shutdown后情况如何？<br>
 4 主机又回来了后，主机新增记录，从机还能否顺利复制？<br>
 5 其中一台从机down后情况如何？依照原有它能跟上大部队吗？
-
-薪火相传
+- 薪火相传
 > - 上一个Slave可以是下一个slave的Master，Slave同样可以接收其他
 slaves的连接和同步请求，那么该slave作为了链条中下一个的master,
 可以有效减轻master的写压力
 > - 中途变更转向:会清除之前的数据，重新建立拷贝最新的
 Slaveof 新主库IP 新主库端口
-
-反客为主<br>
+- 反客为主<br>
 SLAVEOF no one：使当前数据库停止与其他数据库的同步，转成主数据库
 4. 复制原理
 - Slave启动成功连接到master后会发送一个sync命令
