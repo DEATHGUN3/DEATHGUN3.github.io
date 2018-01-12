@@ -1,6 +1,6 @@
 
 ## 是什么
-1. 官网介绍
+- 官网介绍
 ![](/img/redis-replication/redis-replication-intro.png)
 行话：也就是我们所说的主从复制，主机数据更新后根据配置和策略，
 自动同步到备机的master/slaver机制，Master以写为主，Slave以读为主
