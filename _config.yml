@@ -93,5 +93,9 @@ friends: [
     {
         title: "Spring Cloud|周立",
         href: "http://www.itmuch.com/"
+    },
+    {
+        title: "翟永超",
+        href: "http://blog.didispace.com/"
     }
 ]
