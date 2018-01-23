@@ -29,7 +29,7 @@
 基本功能点如下图所示:
 ![](/img/shiro/shiro-architecture1.png)
 Shiro的四大核心部分——身份认证，授权，会话管理和加密。
-- <font color=#FF0000>Authentication</font>:<font color=#0000CD>身份认证/登录</font>，验证用户是不是拥有相应的身份；
+- `Authentication`:<font color=#0000CD>身份认证/登录</font>，验证用户是不是拥有相应的身份；
 - <font color=#FF0000>Authorization</font>:<font color=#0000CD>授权，即权限认证</font>，验证某个已认证的用户是否拥有某个权限；即判断用户是否能进行什么操作，如:验证某个用户是否拥有某个角色。或者细粒度地验证某个用户对某个资源是否具有某个权限。
 - <font color=#FF0000>Session Manager</font>:<font color=#0000CD>会话管理</font>，即用户登录后就是一次会话，在没有退出之前，它的所有信息都在会话中；
 <font color=#0000CD>会话可以是普通JavaSE环境，也可以是Web环境</font>；
