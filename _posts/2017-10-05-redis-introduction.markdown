@@ -14,12 +14,12 @@ tags:
 
 <!-- Chinese Version -->
 <div class="zh post-container">
-    {% capture about_zh %}{% include posts/2017-10-05-redis-introdution/zh.md %}{% endcapture %}
+    {% capture about_zh %}{% include posts/2017-10-05-redis-introduction/zh.md %}{% endcapture %}
     {{ about_zh | markdownify }}
 </div>
 
 <!-- English Version -->
 <div class="en post-container">
-    {% capture about_en %}{% include posts/2017-10-05-redis-introdution/en.md %}{% endcapture %}
+    {% capture about_en %}{% include posts/2017-10-05-redis-introduction/en.md %}{% endcapture %}
     {{ about_en | markdownify }}
 </div>
