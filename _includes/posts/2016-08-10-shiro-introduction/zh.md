@@ -35,12 +35,12 @@ Shiro的四大核心部分——身份认证，授权，会话管理和加密。
 - `Cryptograhy`:``加密``，保护数据的安全性，如密码加密存储到数据库，而不是明文存储。
 
 除了以上四大核心功能，shiro还提供很多扩展:
-- <font color=#FF0000>Web Support</font>:<font color=#0000CD>Web支持</font>，可以非常容易地集成到Web环境；
-- <font color=#FF0000>Caching</font>:<font color=#0000CD>缓存</font>，比如用户登录后，其用户信息、拥有的角色/权限不必每次去查，这样可以提高效率；
-- <font color=#000000>Concurrency</font>:Shiro支持<font color=#0000CD>多线程应用的并发认证</font>，即如在一个线程中开启另外一个线程，能把权限自动传播下去
-- <font color=#000000>Testing</font>:提供<font color=#0000CD>测试</font>支持；
-- <font color=#FF0000>Run As</font>:<font color=#0000CD>允许一个用户假装为另一个用户</font>(如果他们允许)<font color=#0000CD>的身份进行访问</font>；
-- <font color=#FF0000>Remember Me</font>:<font color=#0000CD>记住我</font>，这个是非常常见的功能，即一次登录后，下次再来的话就不用登录了。
+- `Web Support`:```Web支持```，可以非常容易地集成到Web环境；
+- `Caching`:```缓存<```，比如用户登录后，其用户信息、拥有的角色/权限不必每次去查，这样可以提高效率；
+- **Concurrency**:Shiro支持```多线程应用的并发认证```，即如在一个线程中开启另外一个线程，能把权限自动传播下去
+- **Testing**:提供```测试```支持；
+- `Run As`:```允许一个用户假装为另一个用户```(如果他们允许)```的身份进行访问```；
+- `Remember Me`:```记住我```，这个是非常常见的功能，即一次登录后，下次再来的话就不用登录了。
 
 
 
