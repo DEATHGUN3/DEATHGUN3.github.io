@@ -2,8 +2,7 @@
 ## Shiro架构(Shiro外部来看)
 从外部来看Shiro，即从应用程序角度来观察如何使用Shiro完成工作
 ![](/img/shiro/shiro-architecture3.png)
-- `Subject`:`应用代码直接交互的对象是Subject`，也就是说Shiro的对外API核心就是Subject。`Subject代表了当前"用户"`，这个用户不一定是一个具体的人，与当前应用
-交互的任何东西都是Subject，如网络爬虫，机器人等；`与Subject的所有交互都会委托给SecurityManager`；`Subject其实是一个门面，SecurityManager才是实际的执行者`
+- `Subject`:`应用代码直接交互的对象是Subject`，也就是说Shiro的对外API核心就是Subject。`Subject代表了当前"用户"`，这个用户不一定是一个具体的人，与当前应用交互的任何东西都是Subject，如网络爬虫，机器人等；`与Subject的所有交互都会委托给SecurityManager`；`Subject其实是一个门面，SecurityManager才是实际的执行者`
 - `SecurityManager`：安全管理器；即`所有与安全有关的操作都会与SecurityManager交互`；且其管理着所有Subject；可以看出它是`Shiro的核心`，它`负责与Shiro的其他组件进行交互`，
 它相当于SpringMVC中的DispatcherServlet的角色
 - `Realm`：Shiro从`Realm获取安全数据(如用户、角色、权限)`，也就是说SecurityManager要验证用户身份，那么它需要从Realm获取相应的用户进行比较以确定用户身份
