@@ -13,7 +13,7 @@ Redis列表是最简单的字符串列表，按照插入顺序排序。可以添
 - Set(集合)<br>
 Redis的Set是String类型的无序集合。它是通过HashTable实现的。
 - Zset(sorted set:有序集合)<br>
-Redis zset和set一样也是String类型元素的集合，且不允许重复的成员。**不同的是每个元素都会关联一个double类型的分数。**Redis正是通过分数来为集合中的成员进行从小到大的排序。**zet的成员是唯一的，但分数(score)却可以重复。**
+Redis zset和set一样也是String类型元素的集合，且不允许重复的成员。**不同的是每个元素都会关联一个double类型的分数。**Redis正是通过分数来为集合中的成员进行从小到大的排序。**zset的成员是唯一的，但分数(score)却可以重复。**
 
 ## Redis常见数据操作命令
 ![](/img/redis/redis-command-reference.png)
