@@ -2,7 +2,8 @@
 title: Jin Blog
 SEOTitle: Jin的博客 | Jin Blog
 header-img: img/activiti/bg2.jpg
-email: huxpro@gmail.com
+#email: huxpro@gmail.com
+email:925970016@qq.com
 description: "关于Activiti工作流 | 金整国，Software Engineer，Flow Designer | 这里是 @Henry金整国 的个人博客，与你一起发现更大的世界。"
 keyword: "金整国, Henry金整国, Henry, 鬼栈, @henry, 金整国的博客, Jin Blog, 博客, 个人网站, 互联网, Activiti"
 url: "https://deathgun3.github.io/"              # your host, for absolute URL
