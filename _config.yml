@@ -125,5 +125,9 @@ friends: [
     {
         title: "纯洁的微笑",
         href: "http://www.ityouknow.com/"
+    },
+    {
+        title: "GitHub上有趣的资源",
+        href: "https://www.jianshu.com/c/e2a2a0073e2d"
     }
 ]
