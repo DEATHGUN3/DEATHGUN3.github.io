@@ -10,8 +10,10 @@
 
 # code-push-server使用常见问题
 1. code-push-server 关闭ssh终端窗口后，服务就停止了。怎么能够让它在后台运行？
+
 用pm2 start code-push-server启动服务。
 2. code-push-server在windows上无法下载更新包
+
 在windows下默认有环境变量Public=C:\User\Public,把这个环境变量删除或者将/config/config.js中的public:process.env.PUBLIC || '/download'改成public: '/download'
 
 
