@@ -129,5 +129,9 @@ friends: [
     {
         title: "GitHub上有趣的资源",
         href: "https://www.jianshu.com/c/e2a2a0073e2d"
+    },
+    {
+        title: "Spring Cloud中文索引",
+        href: "http://springcloud.fun/"
     }
 ]
