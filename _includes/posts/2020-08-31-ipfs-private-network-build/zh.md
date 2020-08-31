@@ -87,7 +87,7 @@ docker exec ipfs_host ipfs bootstrap rm --all
 
 ### 互相添加其他节点创建网络
 
-- 获取 xxx.xx.x.111 节点信息
+获取 xxx.xx.x.111 节点信息
   
 ```bash
 docker exec ipfs_host ipfs id
@@ -106,7 +106,7 @@ docker exec ipfs_host ipfs id
 }
 ```
 
-- xxx.xx.x.222 节点添加 xxx.xx.x.111
+xxx.xx.x.222 节点添加 xxx.xx.x.111
 
 ```bash
 docker exec ipfs_host ipfs bootstrap add /ip4/xxx.xx.x.111/tcp/4001/ipfs/hash值
