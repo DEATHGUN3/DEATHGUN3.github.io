@@ -11,7 +11,7 @@
 ### 场景一：开始节点后的第一个节点，申请表单
 
  - 配置方式：配置监听类
-    com.gaiaworks.workflow.activiti.activiti.listener.taskListener.SendMail，实现complete事件
+    com.henry.workflow.activiti.activiti.listener.taskListener.SendMail，实现complete事件
  - 参数选择：mailKey的值选择的是申请成功的模版key；receiveUser的值是apply，表示该邮件是发送给申请人的。
 
 ![这里写图片描述](http://img.blog.csdn.net/20171123170452379?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvamluemhlbmdndW8=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
@@ -21,7 +21,7 @@
 ### 场景二：结束节点前的所有任务节点(除去第一个申请表单的任务节点)
 
  - 配置方式：配置监听类
-   com.gaiaworks.workflow.activiti.activiti.listener.taskListener.SendMail，实现create事件
+   com.henry.workflow.activiti.activiti.listener.taskListener.SendMail，实现create事件
  - 参数选择：mailKey的值选择的是审批提醒的模版key；receiveUser的值是assignee，表示该邮件是发送给审批人的。
 
 ![这里写图片描述](http://img.blog.csdn.net/20171123171608573?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvamluemhlbmdndW8=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
