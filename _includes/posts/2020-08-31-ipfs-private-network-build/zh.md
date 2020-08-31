@@ -68,7 +68,7 @@ go build
 分别将生成的 swarm.key 拷贝至服务器挂载目录 data 文件夹下
 
 ```bash
-scp ~/swarm.key 服务器用户名@服务器地址:/服务器改在目录data文件夹所在路径
+scp ~/swarm.key 服务器用户名@服务器地址:/服务器挂载目录data文件夹所在路径
 ```
 
 重启服务
